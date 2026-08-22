@@ -2,6 +2,8 @@
 
 GitHub Pages向けの静的サイトです。JavaScript、分析SDK、問い合わせフォーム、外部フォントは使用していません。
 
+公開準備URL: <https://brunocasave.github.io/learning-browser-site/>
+
 ## 公開前Blocker
 
 - 運営者名と監視可能な問い合わせメールを確定する
