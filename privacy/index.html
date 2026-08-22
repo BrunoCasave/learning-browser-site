@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="部分翻訳学習アプリのプライバシー通知草案です。" />
+    <meta name="theme-color" content="#087f82" />
+    <title>プライバシー通知 | 部分翻訳学習アプリ</title>
+    <link rel="icon" href="../assets/app-icon.png" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a class="brand" href="../">
+          <img src="../assets/app-icon.png" alt="" />
+          <span>部分翻訳学習アプリ</span>
+        </a>
+        <div class="nav-links">
+          <a href="../support/">サポート</a>
+          <a href="./" aria-current="page">プライバシー</a>
+          <a href="../terms/">利用規約</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="document-wrap">
+      <article class="document">
+        <p class="eyebrow">PRIVACY</p>
+        <h1>プライバシー通知</h1>
+        <div class="draft-banner">
+          <strong>公開前レビュー用草案</strong><br />
+          運営者、問い合わせ先、施行日、保存期間、配信地域の法務確認が未確定です。ストア申請用の確定版ではありません。
+        </div>
+        <p class="meta">文書版: 0.1-draft / 最終更新: 2026年8月22日</p>
+
+        <h2>1. アプリの処理</h2>
+        <p>
+          部分翻訳学習アプリは公開HTTPSページをWebViewで表示します。学習モードでは、固定された読み取り専用の端末内検査コードが、上限付きの可視テキストと単語位置を取得します。選択した少数の語をGoogle
+          ML Kitが端末上で翻訳し、結果は変更していないWebサイトの上へFlutterのネイティブ表示として重ねます。翻訳をサイトのDOMへ挿入しません。
+        </p>
+        <p>記事本文と翻訳結果を、翻訳処理のために開発者運営サーバーへ送信する独自クラウド翻訳は使用しません。</p>
+
+        <h2>2. 端末に保存するデータ</h2>
+        <p>
+          UI・学習設定、言語、学習レベル、プライベートセッションとモデル取得設定、オンボーディング状態、法務文書への同意記録、ユーザーが個別に保存した原文と翻訳文の組、復習状態、日別の学習・復習件数と時間の集計値を端末へ保存します。
+        </p>
+        <p>
+          保存表現と復習状態には、URL、サイト名、記事タイトル、著者、記事全文を含めません。記事本文、読み方、記事全体の翻訳結果は永続キャッシュしません。本アプリ独自の閲覧履歴・検索履歴は作成しません。
+        </p>
+
+        <h2>3. WebViewと削除</h2>
+        <p>
+          WebサイトはプラットフォームWebView内へCookieやサイトデータを保存する場合があります。プライベートセッションは初期状態で有効で、コールドスタート時にWebViewのCookie、ストレージ、キャッシュを削除します。設定から学習データ、サイトデータ、翻訳モデル、または全ローカルデータを削除できます。
+        </p>
+
+        <h2>4. 外部事業者等による処理</h2>
+        <ul>
+          <li>訪問先Webサイトは、IPアドレス、ヘッダー、Cookie等を含む通常のWeb通信情報を受け取ります。</li>
+          <li>検索語はユーザーが選んだ検索サービスへ送信されます。</li>
+          <li>Google ML Kitは、SDKの提供・保守・診断に関する端末・アプリ情報、インストール単位の識別子、性能指標、イベント、エラーコード、設定言語等を収集する場合があります。</li>
+          <li>読み上げを操作した場合、対象テキストがOSまたは選択した音声エンジンで処理されます。通信の有無は端末設定と当該エンジンの条件に従います。</li>
+          <li>問い合わせを送信した場合、運営者と利用する通信事業者が回答・セキュリティ対応・法令遵守に必要な範囲で内容を処理します。</li>
+          <li>本サイトはGitHub Pagesでの公開を予定しており、GitHubがアクセス情報を処理する場合があります。</li>
+        </ul>
+        <p>
+          本アプリにはアカウント、開発者独自の分析SDK、広告SDK、個人データ販売はありません。ただし、外部サービスによる通信まで「何も送信されない」とは説明しません。
+        </p>
+
+        <h2>5. 保存期間と削除</h2>
+        <p>
+          ローカルデータは、ユーザーが削除、アプリデータ消去、またはアンインストールを行うまで保持されます（OSの挙動を除きます）。サイトデータはWebViewとWebサイト、翻訳モデルはGoogle
+          SDKの管理に従います。問い合わせの保存期間は公開前に確定します。
+        </p>
+
+        <h2>6. 未成年者、国外処理、変更</h2>
+        <p>
+          本アプリは子供向けアプリではありません。外部事業者やWebサイトが国外で情報を処理する場合があります。重要な変更時は文書版と日付を更新し、必要な場合はアプリ内で通知します。
+        </p>
+
+        <h2>7. 連絡先</h2>
+        <p>
+          運営者名と監視可能なプライバシー問い合わせ先は公開前に掲載します。現在は<a href="../support/">サポートページ</a>で準備状況をご確認ください。
+        </p>
+
+        <hr />
+        <p class="meta" lang="en">
+          An English legal translation will be reviewed and published before distribution in English-speaking regions. The Japanese draft above is not a final legal notice.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© 2026 部分翻訳学習アプリ</p>
+        <p><a href="../">ホームへ戻る</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
