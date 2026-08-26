@@ -2,14 +2,15 @@
 
 GitHub Pages向けの静的サイトです。JavaScript、分析SDK、問い合わせフォーム、外部フォントは使用していません。
 
-公開準備URL: <https://brunocasave.github.io/learning-browser-site/>
+公開URL: <https://learningbrowser.com/>
 
-## 公開前Blocker
+GitHub Pagesのカスタムドメインはルートの`CNAME`で固定します。TLS証明書の発行中は従来のGitHub Pages URLからも到達できます。
 
-- 運営者名と監視可能な問い合わせメールを確定する
-- プライバシー通知と利用規約の法務レビューを完了する
-- 施行日、保存期間、配信地域、準拠法等を確定する
-- 確定後にアプリのprod configとStore申告URLを更新する
+## アプリ公開前Blocker
+
+- 2026年8月27日施行の法務文書とアプリのprod configを同じ版へ同期済み
+- Store申告内容を最終signed artifactと照合する
+- アプリの審査提出・一般公開は別途明示承認後に行う
 
 ## ローカル確認
 
