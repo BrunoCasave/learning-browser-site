@@ -6,11 +6,14 @@ GitHub Pages向けの静的サイトです。JavaScript、分析SDK、問い合�
 
 GitHub Pagesのカスタムドメインはルートの`CNAME`で固定します。TLS証明書の発行中は従来のGitHub Pages URLからも到達できます。
 
-## アプリ公開前Blocker
+## 公開状況
 
-- 2026年8月27日施行の法務文書とアプリのprod configを同じ版へ同期済み
-- Store申告内容を最終signed artifactと照合する
-- アプリの審査提出・一般公開は別途明示承認後に行う
+- Android版 `1.0.0` はGoogle Playで公開中
+- iOS版は準備中
+- 2026年8月27日施行の法務文書Version 1.0とアプリのprod configは同期済み
+- 有料機能の販売条件と事業者情報は`/commerce/`の「特定商取引法に基づく表示」で明示
+
+このディレクトリを公開サイト専用のGitHub Pagesリポジトリのルートへ同期し、pushして公開します。アプリ本体リポジトリの`website/`を変更しただけでは公開URLは更新されません。
 
 ## ローカル確認
 
